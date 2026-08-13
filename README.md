@@ -1,122 +1,72 @@
 # 🌍 Air Quality Index Prediction Model
 
+> **A Machine Learning project for analyzing environmental data and predicting Air Quality Index (AQI).**
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikit-learn)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+---
+
 ## 📌 Project Overview
 
-The **Air Quality Index Prediction Model** is an end-to-end Machine Learning project developed to analyze air-quality data and predict the **Air Quality Index (AQI)** using environmental and air-pollution parameters.
+Air pollution is one of the major environmental challenges affecting public health and quality of life.
 
-The project follows a structured Data Science workflow, starting from data ingestion and preprocessing to feature engineering, model building, evaluation, and prediction.
+This project focuses on developing a **Machine Learning-based Air Quality Index Prediction Model** using historical environmental and pollutant measurements.
 
-This project demonstrates practical implementation of **Python, Pandas, NumPy, Scikit-learn, Data Preprocessing, Machine Learning, and GitHub**.
+The project follows an end-to-end data science workflow:
 
----
+**Data Ingestion → Data Cleaning → EDA → Feature Engineering → Preprocessing → Model Building → Evaluation → Prediction**
 
-## 🎯 Project Objectives
-
-The main objectives of this project are:
-
-- Import and understand the Air Quality dataset
-- Perform data ingestion
-- Perform data cleaning and preprocessing
-- Handle missing and invalid values
-- Perform exploratory data analysis
-- Perform feature engineering
-- Identify important variables affecting air quality
-- Prepare data for machine learning
-- Build a machine learning prediction model
-- Evaluate model performance
-- Generate Air Quality Index predictions
-- Organize the project using a modular machine learning structure
+The main objective is to identify meaningful patterns in air quality data and develop a machine learning model capable of predicting AQI based on environmental parameters.
 
 ---
 
-## 📊 Dataset
+## 🎯 Objectives
 
-The project uses the **Air Quality UCI Dataset**.
-
-The dataset contains measurements related to different air pollutants and environmental conditions.
-
-### Important Features
-
-Some of the major variables include:
-
-- CO – Carbon Monoxide
-- PT08.S1 – Tin Oxide Sensor
-- NMHC – Non-Methane Hydrocarbons
-- C6H6 – Benzene
-- PT08.S2 – Sensor measurement
-- NOx – Nitrogen Oxides
-- PT08.S3 – Sensor measurement
-- NO2 – Nitrogen Dioxide
-- PT08.S4 – Sensor measurement
-- PT08.S5 – Sensor measurement
-- Temperature
-- Relative Humidity
-- Absolute Humidity
-
-### Target Variable
-
-**Air Quality Index (AQI)**
-
-The target variable represents the air-quality level that the machine learning model aims to predict.
+- 📥 Load and inspect the air quality dataset
+- 🧹 Clean and preprocess the data
+- 🔍 Perform Exploratory Data Analysis
+- 🛠️ Perform feature engineering
+- 📊 Analyze pollutant relationships
+- 🤖 Build a machine learning prediction model
+- 📈 Evaluate model performance
+- 🔮 Predict Air Quality Index
+- 📁 Build a structured and reproducible ML project
 
 ---
 
-# 🛠️ Technologies Used
-
-## Programming Language
-
-- Python
-
-## Python Libraries
-
-- NumPy
-- Pandas
-- Scikit-learn
-- SciPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-
-## Development Tools
-
-- VS Code
-- Jupyter Notebook
-- Git
-- GitHub
-
----
-
-# 🔄 Machine Learning Workflow
+## 📂 Project Structure
 
 ```text
-                    Air Quality Dataset
-                            │
-                            ▼
-                    Data Ingestion
-                            │
-                            ▼
-                    Data Validation
-                            │
-                            ▼
-                    Data Cleaning
-                            │
-                            ▼
-                  Data Preprocessing
-                            │
-                            ▼
-                  Feature Engineering
-                            │
-                            ▼
-                    Data Splitting
-                            │
-                            ▼
-                    Model Building
-                            │
-                            ▼
-                   Model Prediction
-                            │
-                            ▼
-                   Model Evaluation
-                            │
-                            ▼
-                     AQI Prediction
+AirQuality_Index_PredictionModel/
+│
+├── 📁 artifact/
+│   └── Model artifacts and generated outputs
+│
+├── 📁 data/
+│   └── AirQualityUCI.xlsx
+│
+├── 📁 experiment/
+│   └── AirQuality_Index_PredictionModel.ipynb
+│
+├── 📁 report/
+│   └── Project reports and analysis
+│
+├── 📁 researchpaper/
+│   └── Research Article.pdf
+│
+├── 📁 src/
+│   ├── data_ingestion.py
+│   ├── data_preprocessing.py
+│   └── model_build.py
+│
+├── 📄 main.py
+├── 📄 README.md
+├── 📄 requirements.txt
+├── 📄 LICENSE
+└── 📄 .gitignore
